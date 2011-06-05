@@ -12,6 +12,10 @@ get '/style.css' do
   send_file 'style.css'
 end
 
+get '/CHE.jpg' do
+  send_file 'CHE.jpg'
+end
+
 post '/cheify' do
   if params[:data].nil? or params[:data][:tempfile].nil?
     redirect '/'

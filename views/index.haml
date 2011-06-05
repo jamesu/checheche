@@ -1,0 +1,5 @@
+%h1 Che-ify
+%form{:action => "/cheify", :enctype => "multipart/form-data", :method => "post"}
+  %label{:for => 'data'}= "Select a file to che-ify"
+  %input{:type => 'file', :name => 'data'}
+  %input{:type => 'submit'}= "Che-ify"
